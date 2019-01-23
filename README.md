@@ -26,3 +26,14 @@ npm run build
 ``` js
 npm run start
 ```
+
+## EBS
+This script can be easily executed in an EBS instance. Simply use the EB CLI.
+1. Init EB
+``` bash
+eb init
+```
+2. Deploy it
+``` bash
+eb deploy
+```
