@@ -1,0 +1,34 @@
+{
+  "name": "mail-receiver",
+  "version": "1.0.0",
+  "description": "This is a simple Express server to confirm a http confirmation from AWS SNS.",
+  "main": "build/app.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./server/app.js",
+    "start": "node ./build/app.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./server -s",
+    "build": "npm run clean && npm run build-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sns",
+    "http",
+    "subscribe",
+    "aws"
+  ],
+  "author": "Leon Braun (Lambus GmbH)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "nodemon": "^1.18.9"
+  }
+}
