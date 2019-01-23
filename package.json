@@ -1,5 +1,5 @@
 {
-  "name": "mail-receiver",
+  "name": "sns-confirmation",
   "version": "1.0.0",
   "description": "This is a simple Express server to confirm a http confirmation from AWS SNS.",
   "main": "build/app.js",
